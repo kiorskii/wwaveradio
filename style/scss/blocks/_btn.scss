@@ -1,12 +1,11 @@
-/* Button Purple */
-.btn {
+/* Button Purple Fill */
+.btn_p_f {
   color: $white;
-  padding: 25px 54px;
-  border-radius: 40px;
   background: $btn-second;
   border: none;
   outline: none;
   cursor: pointer;
+  transition: 150ms ease-in-out;
 
 
   &:hover {
@@ -23,31 +22,30 @@
   }
 }
 
-/* Button White */
-.btn_w {
+/* Button Purple Transparent */
+.btn_p_t {
   color: $btn-second;
-  padding: 25px 54px;
-  border-radius: 40px;
-  background: $white;
-  border: none;
-  outline: 2px solid $btn-third;
+  background: transparent;
+  border: 2px solid $btn-second;
+  outline: none;
   cursor: pointer;
+  transition: 150ms ease-in-out;
+
 
   &:hover {
-    color: $white;
     background: $btn-second;
-    outline: none;
+    color: $white;
   }
 
   &:focus {
-    outline: 2px solid $btn-third;
+    border: 2px solid $btn-third;
     background: $btn-first;
     color: $white;
   }
 
   &:active {
     background: $btn-third;
-    outline: none;
+    color: $white;
   }
 }
 
@@ -55,14 +53,11 @@
 
 .btn_b {
   color: $d-blue;
-  padding: 12px 43px;
-  border-radius: 77px;
   background: $white;
   border: none;
   outline: 2px solid $d-blue;
   cursor: pointer;
-  width: 160px;
-  height: 40px;
+  transition: 150ms ease-in-out;
 
   &:hover {
     background-color: $gray;
@@ -76,5 +71,31 @@
   &:active {
     background-color: $d-gray;
     color: $white;
+  }
+}
+
+/* Button Yellow */
+
+.btn_y {
+  color: $accent;
+  background: transparent;
+  outline: none;
+  border: 2px solid $accent;
+  cursor: pointer;
+  transition: 150ms ease-in-out;
+
+  &:hover {
+    background-color: $accent;
+    color: $d-blue;
+  }
+
+  &:focus {
+    background: $accent2;
+    color: $d-blue;
+  }
+
+  &:active {
+    background: $accent2;
+    border: 2px solid $accent2;
   }
 }

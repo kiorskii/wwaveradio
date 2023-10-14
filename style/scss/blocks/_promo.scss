@@ -1,0 +1,64 @@
+.promo {
+  background-color: $d-gray;
+  padding: 94px 0;
+  min-width: 1170px;
+
+  .container {
+    display: flex;
+    column-gap: 30px;
+  }
+}
+
+.promo__img {
+  max-width: 540px;
+  max-height: 542px;
+}
+
+.promo__imgContainer::before {
+  content: "";
+  background-image: url("/src/img/label_new.png");
+  width: 160px;
+  height: 160px;
+  background-size: 160px 160px;
+  position: absolute;
+}
+
+
+.promo__title {
+  color: $accent;
+  margin-bottom: 19px;
+}
+
+.promo__decoration {
+  margin-bottom: 19px;
+}
+
+.promo__text {
+  color: $white;
+  line-height: 180%;
+
+  &:first-of-type {
+    margin-bottom: 12px;
+  }
+
+  margin-bottom: 30px;
+
+}
+
+.promo__price {
+  font-size: 30px;
+  color: $white;
+  margin-bottom: 30px;
+}
+
+.promo__button {
+  width: 300px;
+  height: 70px;
+  border-radius: 100px;
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

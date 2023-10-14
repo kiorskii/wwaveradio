@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colors */
 @import url("https://fonts.cdnfonts.com/css/muller-narrow");
 /* 
@@ -7,6 +8,10 @@ font-family: 'Muller', sans-serif;
 body {
   font-family: "Muller", sans-serif;
   color: #121723;
+}
+
+button {
+  font-family: "Muller", sans-serif;
 }
 
 h2 {
@@ -99,9 +104,15 @@ ul {
   padding-top: 38px;
 }
 
+.hero__button {
+  padding: 25px 54px;
+  border-radius: 40px;
+}
+
 .podcasts {
   background-color: #E6E8EC;
   padding: 94px 0;
+  min-width: 1170px;
 }
 
 .podcasts__title {
@@ -184,6 +195,10 @@ ul {
 .radio__btn {
   margin-top: 24px;
   margin-bottom: 12px;
+  padding: 12px 43px;
+  border-radius: 77px;
+  width: 160px;
+  height: 40px;
 }
 
 .radio__time {
@@ -199,63 +214,277 @@ ul {
   border: 1px solid #E6E8EC;
 }
 
-/* Button Purple */
-.btn {
+.guests {
+  background-color: #121723;
+  padding: 94px 0;
+  min-width: 1170px;
+}
+.guests h2,
+.guests h3 {
   color: #fff;
-  padding: 25px 54px;
-  border-radius: 40px;
+}
+.guests p {
+  color: #a1a6b4;
+}
+
+.guests__title {
+  margin-bottom: 14px;
+}
+
+.guests__intro {
+  margin-bottom: 8px;
+}
+
+.guests__description {
+  margin-bottom: 50px;
+  max-width: 825px;
+  line-height: 160%;
+}
+
+.guests__item {
+  margin-bottom: 50px;
+  max-width: 920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  position: relative;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.guests__name {
+  margin-bottom: 8px;
+}
+
+.guests__button {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.playlists {
+  padding: 94px 0;
+}
+.playlists .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.playlists__info {
+  max-width: 350px;
+}
+
+.playlists__title {
+  margin-bottom: 12px;
+}
+
+.playlists__description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #A1A6B4;
+  margin-bottom: 6px;
+}
+
+.playlists__agetag {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #A1A6B4;
+  border: 1px solid #A1A6B4;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Playlists List/Cards */
+.playlists__list {
+  max-width: 740px;
+  margin-top: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.playlists__item {
+  max-width: 160px;
+  border: 1px solid #E6E8EC;
+}
+
+.playlist__content {
+  padding: 16px;
+}
+
+.playlists__chart {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #A1A6B4;
+}
+
+/* Страна исполнителя */
+.item_ru,
+.item_uk {
+  position: relative;
+}
+
+.item_ru::before {
+  content: url("/src/img/icons/country_ru.svg");
+  display: block;
+  right: 0%;
+  position: absolute;
+  background-color: black;
+  padding: 4px;
+}
+
+.item_uk::before {
+  content: url("/src/img/icons/country_uk.svg");
+  display: block;
+  position: absolute;
+  right: 0%;
+  background-color: black;
+  padding: 4px;
+}
+
+.promo {
+  background-color: #292E39;
+  padding: 94px 0;
+  min-width: 1170px;
+}
+.promo .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.promo__img {
+  max-width: 540px;
+  max-height: 542px;
+}
+
+.promo__imgContainer::before {
+  content: "";
+  background-image: url("/src/img/label_new.png");
+  width: 160px;
+  height: 160px;
+  background-size: 160px 160px;
+  position: absolute;
+}
+
+.promo__title {
+  color: #F0D288;
+  margin-bottom: 19px;
+}
+
+.promo__decoration {
+  margin-bottom: 19px;
+}
+
+.promo__text {
+  color: #fff;
+  line-height: 180%;
+  margin-bottom: 30px;
+}
+.promo__text:first-of-type {
+  margin-bottom: 12px;
+}
+
+.promo__price {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.promo__button {
+  width: 300px;
+  height: 70px;
+  border-radius: 100px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+}
+
+/* Button Purple Fill */
+.btn_p_f {
+  color: #fff;
   background: #6D31EE;
   border: none;
   outline: none;
   cursor: pointer;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
 }
-.btn:hover {
+.btn_p_f:hover {
   background: #AA9DFA;
 }
-.btn:focus {
+.btn_p_f:focus {
   outline: 2px solid #4F28A5;
   background: #AA9DFA;
 }
-.btn:active {
+.btn_p_f:active {
   background: #4F28A5;
 }
 
-/* Button White */
-.btn_w {
+/* Button Purple Transparent */
+.btn_p_t {
   color: #6D31EE;
-  padding: 25px 54px;
-  border-radius: 40px;
-  background: #fff;
-  border: none;
-  outline: 2px solid #4F28A5;
-  cursor: pointer;
-}
-.btn_w:hover {
-  color: #fff;
-  background: #6D31EE;
+  background: transparent;
+  border: 2px solid #6D31EE;
   outline: none;
+  cursor: pointer;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
 }
-.btn_w:focus {
-  outline: 2px solid #4F28A5;
+.btn_p_t:hover {
+  background: #6D31EE;
+  color: #fff;
+}
+.btn_p_t:focus {
+  border: 2px solid #4F28A5;
   background: #AA9DFA;
   color: #fff;
 }
-.btn_w:active {
+.btn_p_t:active {
   background: #4F28A5;
-  outline: none;
+  color: #fff;
 }
 
 /* Button Black */
 .btn_b {
   color: #121723;
-  padding: 12px 43px;
-  border-radius: 77px;
   background: #fff;
   border: none;
   outline: 2px solid #121723;
   cursor: pointer;
-  width: 160px;
-  height: 40px;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
 }
 .btn_b:hover {
   background-color: #E6E8EC;
@@ -267,4 +496,27 @@ ul {
 .btn_b:active {
   background-color: #292E39;
   color: #fff;
+}
+
+/* Button Yellow */
+.btn_y {
+  color: #F0D288;
+  background: transparent;
+  outline: none;
+  border: 2px solid #F0D288;
+  cursor: pointer;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+}
+.btn_y:hover {
+  background-color: #F0D288;
+  color: #121723;
+}
+.btn_y:focus {
+  background: #BB973E;
+  color: #121723;
+}
+.btn_y:active {
+  background: #BB973E;
+  border: 2px solid #BB973E;
 }

@@ -1,0 +1,85 @@
+.playlists {
+  padding: 94px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.playlists__info {
+  max-width: 350px;
+}
+
+.playlists__title {
+  margin-bottom: 12px;
+}
+
+.playlists__description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #A1A6B4;
+  margin-bottom: 6px;
+}
+
+.playlists__agetag {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #A1A6B4;
+  border: 1px solid #A1A6B4;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Playlists List/Cards */
+
+.playlists__list {
+  max-width: 740px;
+  margin-top: 14px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.playlists__item {
+  max-width: 160px;
+  border: 1px solid $gray;
+}
+
+.playlist__content {
+  padding: 16px;
+}
+
+.playlists__chart {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #A1A6B4;
+}
+
+/* Страна исполнителя */
+
+.item_ru,
+.item_uk {
+  position: relative;
+}
+
+.item_ru::before {
+  content: url("/src/img/icons/country_ru.svg");
+  display: block;
+  right: 0%;
+  position: absolute;
+  background-color: black;
+  padding: 4px;
+}
+
+.item_uk::before {
+  content: url("/src/img/icons/country_uk.svg");
+  display: block;
+  position: absolute;
+  right: 0%;
+  background-color: black;
+  padding: 4px;
+}
