@@ -1,0 +1,48 @@
+.radio {
+  padding: 94px 0;
+  min-height: 564px;
+  position: relative;
+
+  .container {
+    display: flex;
+    gap: 53px;
+  }
+}
+
+.radio__info_bottom {
+  position: absolute;
+  bottom: 0;
+  max-width: 255px;
+  padding-bottom: 94px;
+}
+
+/* Right section */
+
+.radio__list {
+  padding-top: 14px;
+  display: inline-flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.radio__description {
+  padding: 20px 16px;
+}
+
+.radio__btn {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.radio__time {
+  color: #A1A6B4;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.radio__item {
+  max-width: 254px;
+  max-height: 260px;
+  border: 1px solid $gray;
+}

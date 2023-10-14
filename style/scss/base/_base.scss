@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/muller-narrow');
+
+/* 
+font-family: 'Muller Narrow', sans-serif;
+font-family: 'Muller', sans-serif;
+*/
+
+body {
+  font-family: 'Muller', sans-serif;
+  color: $d-blue;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: $d-blue;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

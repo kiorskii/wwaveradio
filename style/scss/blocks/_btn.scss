@@ -1,0 +1,80 @@
+/* Button Purple */
+.btn {
+  color: $white;
+  padding: 25px 54px;
+  border-radius: 40px;
+  background: $btn-second;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+
+  &:hover {
+    background: $btn-first;
+  }
+
+  &:focus {
+    outline: 2px solid $btn-third;
+    background: $btn-first;
+  }
+
+  &:active {
+    background: $btn-third;
+  }
+}
+
+/* Button White */
+.btn_w {
+  color: $btn-second;
+  padding: 25px 54px;
+  border-radius: 40px;
+  background: $white;
+  border: none;
+  outline: 2px solid $btn-third;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+    background: $btn-second;
+    outline: none;
+  }
+
+  &:focus {
+    outline: 2px solid $btn-third;
+    background: $btn-first;
+    color: $white;
+  }
+
+  &:active {
+    background: $btn-third;
+    outline: none;
+  }
+}
+
+/* Button Black */
+
+.btn_b {
+  color: $d-blue;
+  padding: 12px 43px;
+  border-radius: 77px;
+  background: $white;
+  border: none;
+  outline: 2px solid $d-blue;
+  cursor: pointer;
+  width: 160px;
+  height: 40px;
+
+  &:hover {
+    background-color: $gray;
+  }
+
+  &:focus {
+    outline: 2px solid $d-gray;
+    background-color: $gray ;
+  }
+
+  &:active {
+    background-color: $d-gray;
+    color: $white;
+  }
+}

@@ -1,0 +1,44 @@
+.podcasts {
+  background-color: $gray;
+  padding: 94px 0;
+}
+
+.podcasts__title {
+  margin-bottom: 30px;
+}
+
+.podcasts__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  max-width: 540px;
+  max-height: 140px;
+  background-color: $white;
+}
+
+.card__img {
+  max-width: 112px;
+  max-height: 140px;
+  object-fit: cover;
+}
+
+.card__info {
+  margin: 35px 30px;
+}
+
+.card__duration {
+  font-size: 12px;
+}
+
+.card__title {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.card__author {
+  color: #A1A6B4;
+}

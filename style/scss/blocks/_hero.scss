@@ -1,0 +1,37 @@
+.hero {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 450px;
+  }
+}
+
+.hero__content {
+  max-width: 635px;
+  padding-top: 94px;
+}
+
+.hero__head {
+  font-weight: 700;
+  font-size: 60px;
+  margin: 0;
+
+  &_italic {
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+.hero__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 14px;
+  margin-bottom: 45px;
+}
+
+.hero__img {
+  max-width: 350px;
+  max-height: 372px;
+  padding-top: 38px;
+}

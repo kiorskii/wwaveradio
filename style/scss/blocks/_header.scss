@@ -1,0 +1,14 @@
+.header {
+  .container {
+    min-height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__list {
+  margin: 0;
+  display: flex;
+  column-gap: 40px;
+}

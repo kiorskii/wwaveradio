@@ -1,0 +1,270 @@
+/* Colors */
+@import url("https://fonts.cdnfonts.com/css/muller-narrow");
+/* 
+font-family: 'Muller Narrow', sans-serif;
+font-family: 'Muller', sans-serif;
+*/
+body {
+  font-family: "Muller", sans-serif;
+  color: #121723;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #121723;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header .container {
+  min-height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__list {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 450px;
+}
+
+.hero__content {
+  max-width: 635px;
+  padding-top: 94px;
+}
+
+.hero__head {
+  font-weight: 700;
+  font-size: 60px;
+  margin: 0;
+}
+.hero__head_italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 14px;
+  margin-bottom: 45px;
+}
+
+.hero__img {
+  max-width: 350px;
+  max-height: 372px;
+  padding-top: 38px;
+}
+
+.podcasts {
+  background-color: #E6E8EC;
+  padding: 94px 0;
+}
+
+.podcasts__title {
+  margin-bottom: 30px;
+}
+
+.podcasts__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 540px;
+  max-height: 140px;
+  background-color: #fff;
+}
+
+.card__img {
+  max-width: 112px;
+  max-height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__info {
+  margin: 35px 30px;
+}
+
+.card__duration {
+  font-size: 12px;
+}
+
+.card__title {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.card__author {
+  color: #A1A6B4;
+}
+
+.radio {
+  padding: 94px 0;
+  min-height: 564px;
+  position: relative;
+}
+.radio .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 53px;
+}
+
+.radio__info_bottom {
+  position: absolute;
+  bottom: 0;
+  max-width: 255px;
+  padding-bottom: 94px;
+}
+
+/* Right section */
+.radio__list {
+  padding-top: 14px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.radio__description {
+  padding: 20px 16px;
+}
+
+.radio__btn {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.radio__time {
+  color: #A1A6B4;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.radio__item {
+  max-width: 254px;
+  max-height: 260px;
+  border: 1px solid #E6E8EC;
+}
+
+/* Button Purple */
+.btn {
+  color: #fff;
+  padding: 25px 54px;
+  border-radius: 40px;
+  background: #6D31EE;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #AA9DFA;
+}
+.btn:focus {
+  outline: 2px solid #4F28A5;
+  background: #AA9DFA;
+}
+.btn:active {
+  background: #4F28A5;
+}
+
+/* Button White */
+.btn_w {
+  color: #6D31EE;
+  padding: 25px 54px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: 2px solid #4F28A5;
+  cursor: pointer;
+}
+.btn_w:hover {
+  color: #fff;
+  background: #6D31EE;
+  outline: none;
+}
+.btn_w:focus {
+  outline: 2px solid #4F28A5;
+  background: #AA9DFA;
+  color: #fff;
+}
+.btn_w:active {
+  background: #4F28A5;
+  outline: none;
+}
+
+/* Button Black */
+.btn_b {
+  color: #121723;
+  padding: 12px 43px;
+  border-radius: 77px;
+  background: #fff;
+  border: none;
+  outline: 2px solid #121723;
+  cursor: pointer;
+  width: 160px;
+  height: 40px;
+}
+.btn_b:hover {
+  background-color: #E6E8EC;
+}
+.btn_b:focus {
+  outline: 2px solid #292E39;
+  background-color: #E6E8EC;
+}
+.btn_b:active {
+  background-color: #292E39;
+  color: #fff;
+}
