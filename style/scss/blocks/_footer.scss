@@ -1,0 +1,47 @@
+.footer {
+  background-color: $d-gray;
+  color: $white;
+  min-width: 1170px;
+  padding-bottom: 10px;
+}
+
+.footer__main {
+  padding: 94px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socialsList {
+  display: flex;
+  gap: 21px;
+  margin-top: 20px;
+}
+
+.footer__nav {
+  max-width: 445px;
+  display: flex;
+  column-gap: 108px;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  margin-bottom: 20px;
+
+  a {
+    color: #fff;
+  }
+}
+
+.footer__end {
+  margin: 0 auto;
+  color: #A1A6B4;
+  width: fit-content;
+}
+
+.decorationContainer {
+  height: 12px;
+  background-image: url('/src/img/figures/vector\ footer.svg');
+  background-repeat: repeat-x;
+  overflow: hidden;
+  margin-bottom: 10px;
+}

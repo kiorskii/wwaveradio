@@ -1,0 +1,127 @@
+.form {
+  max-width: 920px;
+
+  & input[type="text"],
+  .form__main {
+    font-family: Muller;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    transition: 150ms ease-in-out;
+
+    &:hover {
+      background: #292E39;
+    }
+
+    &:focus {
+      border: 1px solid #AA9DFA;
+    }
+
+    &:invalid {
+      border: 1px solid #D52B1E;
+
+      &+.error {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.form__main {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 30px;
+  padding: 30px 10px 10px 32px;
+}
+
+.credentials {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.form__name {
+  padding: 10px 10px 10px 32px;
+  width: 445px;
+  height: 70px;
+}
+
+.form__email {
+  padding: 10px 10px 10px 32px;
+  width: 445px;
+  height: 70px;
+}
+
+.form__button {
+  padding: 25px 54px;
+  border-radius: 40px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+// Input Error 
+
+.inputContainer {
+  position: relative;
+}
+
+.form__name_error,
+.form__email_error {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  font-weight: 400;
+  left: 32px;
+  top: 10px;
+  opacity: 0;
+}
+
+// Checkbox
+
+.form__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form__checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.form__checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #fff;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.form__checkbox:checked+label::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23AA9DFA' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  background-size: 10px 10px;
+}
+
+/* стили при наведении курсора на checkbox */
+.form__checkbox:not(:disabled):not(:checked)+label:hover::before {
+  background: #292E39;
+}
+
+
+/* стили для чекбокса, находящегося в фокусе */
+.form__checkbox:focus+label::before {
+  border: 1px solid #AA9DFA;
+}

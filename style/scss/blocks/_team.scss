@@ -1,0 +1,49 @@
+.team {
+  background-color: $d-blue;
+  color: #A1A6B4;
+  padding: 94px 0;
+  min-width: 1170px;
+
+  h2 {
+    color: #fff;
+  }
+}
+
+.team__infoContainer {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.team__intro {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.team__info {
+  line-height: 160%;
+  font-size: 18px;
+}
+
+.team__list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.team__card {
+  max-width: 255px;
+  max-height: 361px;
+}
+
+.team__name {
+  font-size: 20px;
+  color: $white;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.team__quote {
+  font-weight: 400;
+  line-height: 24px;
+}
