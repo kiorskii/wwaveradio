@@ -1,17 +1,27 @@
 @charset "UTF-8";
 /* Colors */
-@import url("https://fonts.cdnfonts.com/css/muller-narrow");
+@import url("/src/fonts/MullerRegular/style.css");
+@import url("/src/fonts/MullerMedium/style.css");
+@import url("/src/fonts/MullerRegularItalic/style.css");
 /* 
 font-family: 'Muller Narrow', sans-serif;
 font-family: 'Muller', sans-serif;
 */
 body {
   font-family: "Muller", sans-serif;
+  font-weight: 400;
+  line-height: normal;
   color: #121723;
 }
 
 button {
   font-family: "Muller", sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h3 {
+  font-weight: 500;
 }
 
 h2 {
@@ -20,6 +30,10 @@ h2 {
 
 h3 {
   font-size: 20px;
+}
+
+h4 {
+  font-weight: 500;
 }
 
 p {
@@ -107,6 +121,7 @@ ul {
 .hero__button {
   padding: 25px 54px;
   border-radius: 40px;
+  font-size: 20px;
 }
 
 .podcasts {
@@ -199,6 +214,7 @@ ul {
   border-radius: 77px;
   width: 160px;
   height: 40px;
+  font-size: 16px;
 }
 
 .radio__time {
@@ -214,14 +230,14 @@ ul {
   border: 1px solid #E6E8EC;
 }
 
+.radio__link {
+  font-style: italic;
+}
+
 .guests {
   background-color: #121723;
   padding: 94px 0;
   min-width: 1170px;
-}
-.guests h2,
-.guests h3 {
-  color: #fff;
 }
 .guests p {
   color: #a1a6b4;
@@ -229,10 +245,12 @@ ul {
 
 .guests__title {
   margin-bottom: 14px;
+  color: white;
 }
 
 .guests__intro {
   margin-bottom: 8px;
+  color: #a1a6b4;
 }
 
 .guests__description {
@@ -257,13 +275,19 @@ ul {
 
 .guests__name {
   margin-bottom: 8px;
+  color: white;
 }
 
 .guests__button {
+  width: 160px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: absolute;
   bottom: 0;
-  padding: 10px 30px;
+  padding: 10px 15px;
   border-radius: 20px;
+  font-size: 16px;
 }
 
 .playlists {

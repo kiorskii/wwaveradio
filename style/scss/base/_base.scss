@@ -1,4 +1,6 @@
-@import url('https://fonts.cdnfonts.com/css/muller-narrow');
+@import url('/src/fonts/MullerRegular/style.css');
+@import url('/src/fonts/MullerMedium/style.css');
+@import url('/src/fonts/MullerRegularItalic/style.css');
 
 /* 
 font-family: 'Muller Narrow', sans-serif;
@@ -7,11 +9,19 @@ font-family: 'Muller', sans-serif;
 
 body {
   font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  line-height: normal;
   color: $d-blue;
 }
 
 button {
   font-family: 'Muller', sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h3 {
+  font-weight: 500;
 }
 
 h2 {
@@ -20,6 +30,10 @@ h2 {
 
 h3 {
   font-size: 20px;
+}
+
+h4 {
+  font-weight: 500;
 }
 
 p {

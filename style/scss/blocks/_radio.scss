@@ -36,6 +36,7 @@
   border-radius: 77px;
   width: 160px;
   height: 40px;
+  font-size: 16px;
 }
 
 .radio__time {
@@ -49,4 +50,8 @@
   max-width: 254px;
   max-height: 260px;
   border: 1px solid $gray;
+}
+
+.radio__link {
+  font-style: italic;
 }
