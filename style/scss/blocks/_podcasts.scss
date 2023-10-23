@@ -14,32 +14,50 @@
   gap: 30px;
 }
 
-.card {
+.podcasts__item {
+  position: relative;
   display: flex;
   max-width: 540px;
   max-height: 140px;
   background-color: $white;
 }
 
-.card__img {
+.podcasts__img {
   max-width: 112px;
   max-height: 140px;
   object-fit: cover;
 }
 
-.card__info {
+.podcasts__info {
   margin: 35px 30px;
 }
 
-.card__duration {
+.podcasts__duration {
   font-size: 12px;
 }
 
-.card__title {
+.podcasts__title {
   margin-top: 8px;
   margin-bottom: 4px;
 }
 
-.card__author {
+.podcasts__author {
   color: #A1A6B4;
+}
+
+.podcasts__link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 112px;
+  height: 100%;
+}
+
+
+@media screen and (max-width:1024px) {
+  .podcasts {
+    min-width: 854px;
+  }
 }

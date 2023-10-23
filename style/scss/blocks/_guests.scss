@@ -50,3 +50,13 @@
   border-radius: 20px;
   font-size: 16px;
 }
+
+@media screen and (max-width:1024px) {
+  .guests {
+    min-width: 854px;
+  }
+
+  .guests__description {
+    max-width: 536px;
+  }
+}

@@ -125,3 +125,12 @@
 .form__checkbox:focus+label::before {
   border: 1px solid #AA9DFA;
 }
+
+@media screen and (max-width:1024px) {
+
+  .form__name,
+  .form__email {
+    width: 397px;
+  }
+
+}

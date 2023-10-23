@@ -2,11 +2,6 @@
 @import url('/src/fonts/MullerMedium/style.css');
 @import url('/src/fonts/MullerRegularItalic/style.css');
 
-/* 
-font-family: 'Muller Narrow', sans-serif;
-font-family: 'Muller', sans-serif;
-*/
-
 body {
   font-family: 'Muller', sans-serif;
   font-weight: 400;
@@ -54,4 +49,76 @@ ul {
   width: 1110px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.none {
+  display: none !important;
+}
+
+@media screen and (max-width:1024px) {
+  .container {
+    width: 824px;
+    margin: 0 auto;
+  }
+
+}
+
+/* Style For Text Links */
+
+.text-link {
+  cursor: pointer;
+  transition: 150ms ease-in-out;
+
+  &:hover {
+    color: $btn-second;
+  }
+
+  &:focus {
+    outline: none;
+    color: #fff;
+    background-color: $btn-first;
+  }
+
+  &:active {
+    color: $btn-third;
+  }
+}
+
+/* Style For Icons */
+
+.icon-link {
+  outline: none;
+
+  &:hover svg>g>path {
+    stroke: $btn-first;
+    transition: 150ms ease-in-out;
+  }
+
+  &:focus path {
+    stroke: $btn-first;
+    ;
+  }
+
+  &:active svg>g>path {
+    stroke: $btn-third;
+  }
+}
+
+/* Style For Footer Social Icons */
+
+.social-svg-links {
+  outline: none;
+
+  &:hover path {
+    fill: $btn-second;
+    transition: 150ms ease-in-out;
+  }
+
+  &:focus path {
+    fill: $btn-first;
+  }
+
+  &:active path {
+    fill: $btn-third;
+  }
 }

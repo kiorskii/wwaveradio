@@ -62,3 +62,28 @@
   justify-content: center;
   gap: 8px;
 }
+
+@media screen and (max-width:1024px) {
+  .promo {
+    min-width: 854px;
+  }
+
+  .promo__imgContainer {
+    align-self: center;
+  }
+
+  .promo__img {
+    max-width: 397px;
+    max-height: 349px;
+  }
+
+  .promo__imgContainer::before {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+  }
+
+  .promo__decoration {
+    max-width: 396px;
+  }
+}

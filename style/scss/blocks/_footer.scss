@@ -45,3 +45,9 @@
   overflow: hidden;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width:1024px) {
+  .footer {
+    min-width: 854px;
+  }
+}

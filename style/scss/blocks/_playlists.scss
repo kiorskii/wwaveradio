@@ -47,6 +47,17 @@
 .playlists__item {
   max-width: 160px;
   border: 1px solid $gray;
+  position: relative;
+}
+
+.playlists__link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
 }
 
 .playlist__content {
@@ -68,18 +79,66 @@
 
 .item_ru::before {
   content: url("/src/img/icons/country_ru.svg");
+  width: 16px;
+  height: 12px;
   display: block;
   right: 0%;
   position: absolute;
-  background-color: black;
   padding: 4px;
+  background-color: black;
+
 }
 
 .item_uk::before {
   content: url("/src/img/icons/country_uk.svg");
+  width: 16px;
+  height: 12px;
   display: block;
-  position: absolute;
   right: 0%;
-  background-color: black;
+  position: absolute;
   padding: 4px;
+  background-color: black;
+
+}
+
+
+/* 1024px Adaptive */
+
+@media screen and (max-width:1024px) {
+  .playlists {
+    min-width: 854px;
+
+    .container {
+      display: block;
+    }
+  }
+
+  .playlists__info {
+    max-width: 854px;
+  }
+
+  .playlists__agetag {
+    margin-bottom: 25px;
+  }
+
+  .playlists__list {
+    max-width: 854px;
+    gap: 25px
+  }
+
+  .playlists__item {
+    min-width: 255px;
+    display: flex;
+
+    img {
+      max-width: 112px;
+      max-height: 112px;
+    }
+  }
+
+  .item_ru::before,
+  .item_uk::before {
+    right: 100%;
+    transform: translateX(100%);
+  }
 }

@@ -12,3 +12,48 @@
   display: flex;
   column-gap: 40px;
 }
+
+
+/* 1024px Adaptive */
+
+@media screen and (max-width:1024px) {
+  .header {
+    margin: 0 auto;
+
+    .container {
+      min-height: 144px;
+
+
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .header__logo {
+    img {
+      max-width: 112px;
+    }
+  }
+
+  .header__nav {
+    width: 100%;
+
+    grid-row: 2;
+    grid-column: span 2;
+    justify-self: center;
+
+    border-top: 1px solid #E6E8EC;
+    border-bottom: 1px solid #E6E8EC;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .header__search {
+    justify-self: end;
+  }
+
+  .header__list {
+    justify-content: space-between;
+  }
+}

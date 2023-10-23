@@ -18,11 +18,13 @@
 .team__intro {
   margin-top: 12px;
   margin-bottom: 8px;
+  line-height: 160%;
 }
 
 .team__info {
   line-height: 160%;
   font-size: 18px;
+  line-height: 160%;
 }
 
 .team__list {
@@ -36,6 +38,12 @@
   max-height: 361px;
 }
 
+.team__img {
+  width: 255px;
+  height: 255px;
+  object-fit: cover;
+}
+
 .team__name {
   font-size: 20px;
   color: $white;
@@ -46,4 +54,28 @@
 .team__quote {
   font-weight: 400;
   line-height: 24px;
+}
+
+@media screen and (max-width:1024px) {
+  .team {
+    min-width: 854px;
+  }
+
+  .team__figure:first-of-type {
+    display: none;
+  }
+
+  .team__list {
+    flex-wrap: wrap;
+  }
+
+  .team__card {
+    max-width: 397px;
+    max-height: 337px;
+  }
+
+  .team__img {
+    width: 397px;
+    height: 260px;
+  }
 }
