@@ -147,3 +147,25 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width:320px) {
+  .form {
+    max-width: 920px;
+
+    & input[type="text"],
+    .form__main {
+      font-size: 16px;
+    }
+  }
+
+  .form__button {
+    font-size: 16px;
+    width: 172px;
+    height: 50px;
+    padding: 0;
+  }
+
+  label {
+    font-size: 9px;
+  }
+}

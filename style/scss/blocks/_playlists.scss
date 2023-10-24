@@ -50,6 +50,11 @@
   position: relative;
 }
 
+.playlists__img {
+  max-width: 160px;
+  max-height: 160px;
+}
+
 .playlists__link::before {
   content: '';
   display: block;
@@ -150,5 +155,56 @@
 
   .playlists__description {
     max-width: 400px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .playlists {
+    min-width: 320px;
+    padding: 54px 0;
+  }
+
+  .playlists__description {
+    font-size: 12px;
+  }
+
+  .playlists__agetag {
+    width: 28px;
+    height: 28px;
+  }
+
+  .playlists__item {
+    display: block;
+    min-width: 113px;
+    width: 113px;
+    max-height: 160px;
+
+    img {
+      max-width: 113px;
+      max-height: 113px;
+    }
+  }
+
+  .playlist__content {
+    padding: 10px;
+  }
+
+  .playlists__name {
+    font-size: 12px;
+  }
+
+  .playlists__chart {
+    font-size: 9px;
+  }
+
+  .playlists__link::before {
+    width: 100%;
+    height: 113px;
+  }
+
+  .item_ru::before,
+  .item_uk::before {
+    right: 0%;
+    transform: none;
   }
 }

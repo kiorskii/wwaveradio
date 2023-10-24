@@ -67,6 +67,16 @@ ul {
   }
 }
 
+@media screen and (max-width:320px) {
+  .container {
+    width: 256px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
 /* Style For Text Links */
 
 .text-link {

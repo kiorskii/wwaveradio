@@ -137,3 +137,43 @@
     height: 255px;
   }
 }
+
+@media screen and (max-width:320px) {
+  .team {
+    padding: 54px 0;
+    min-width: 320px;
+  }
+
+  .team__intro {
+    font-size: 14px;
+  }
+
+  .team__info {
+    font-size: 14px;
+  }
+
+  .team__name {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+
+  .team__quote {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .team__decoration {
+    display: none;
+  }
+
+  .team__card {
+    max-width: 113px;
+    max-height: 214px;
+  }
+
+  .team__img {
+    width: 113px;
+    height: 113px;
+  }
+}

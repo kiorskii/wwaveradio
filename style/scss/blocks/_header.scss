@@ -66,3 +66,24 @@
     }
   }
 }
+
+/* Mobile 320px */
+
+@media screen and (max-width:320px) {
+  .header {
+    .container {
+      min-height: 105px;
+    }
+  }
+
+  .header__logo img {
+    max-width: 87px;
+    height: 10px;
+  }
+
+  .header__nav {
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 17px 0;
+  }
+}

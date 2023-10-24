@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header ">
     <div class="container">
       <div class="header__logo">
         <a href="#">
@@ -42,7 +42,7 @@
     </div>
   </header>
   <main class="">
-    <div class="hero">
+    <div class="hero ">
       <div class="container">
         <div class="hero__content">
           <h1 class="hero__head">Радио <span class="hero__head_italic">W-Wave</span></h1>
@@ -55,7 +55,7 @@
         <img class="hero__img" src="src/img/mic_big.png" alt="">
       </div>
     </div>
-    <div class="podcasts">
+    <div class="podcasts ">
       <div class="container">
         <h2 class="podcasts__title">Подкасты</h2>
         <ul class="podcasts__list">
@@ -126,7 +126,7 @@
         </ul>
       </div>
     </div>
-    <div class="radio">
+    <div class="radio ">
       <div class="container">
         <div class="radio__info">
           <h2 class="radio__title">Передачи</h2>
@@ -191,7 +191,7 @@
         </ul>
       </div>
     </div>
-    <div class="guests">
+    <div class="guests ">
       <div class="container">
         <h2 class="guests__title">Гости</h2>
         <h3 class="guests__intro">У нас бывают:</h3>
@@ -231,7 +231,7 @@
         </ul>
       </div>
     </div>
-    <div class="playlists">
+    <div class="playlists ">
       <div class="container">
         <div class="playlists__info">
           <h2 class="playlists__title">Плейлисты</h2>
@@ -355,7 +355,7 @@
         </ul>
       </div>
     </div>
-    <div class="promo">
+    <div class="promo ">
       <div class="container">
         <div class="promo__imgContainer">
           <img src="src/img/speaker.png" alt="speaker" class="promo__img">
@@ -375,7 +375,7 @@
         </div>
       </div>
     </div>
-    <div class="team">
+    <div class="team ">
       <div class="container">
         <div class="team__infoContainer">
           <div class="team__description">
@@ -435,8 +435,7 @@
               <span class="form__name_error error">Ошибка</span>
             </div>
             <div class="inputContainer">
-              <input type="text" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                class="form__email">
+              <input type="text" placeholder="Email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" class="form__email">
               <span class="form__email_error error">Ошибка</span>
             </div>
           </div>

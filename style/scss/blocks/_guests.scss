@@ -85,3 +85,33 @@
     height: 340px;
   }
 }
+
+@media screen and (max-width:320px) {
+  .guests {
+    min-width: 320px;
+    padding: 54px 0;
+  }
+
+  .guests__img {
+    width: 256px;
+    height: 159px;
+  }
+
+  .guests__intro {
+    font-size: 14px;
+  }
+
+  .guests__description {
+    font-size: 14px;
+  }
+
+  .guests__item {
+    height: 525px;
+  }
+
+  .guests__button {
+    width: 150px;
+    height: 35px;
+    padding: 0;
+  }
+}

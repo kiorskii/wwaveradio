@@ -116,3 +116,85 @@
     margin-top: 0;
   }
 }
+
+@media screen and (max-width:320px) {
+  .radio {
+    padding: 54px 0;
+
+    .container {
+      min-width: 256px;
+      min-height: 690px;
+    }
+  }
+
+  .radio__title {
+    margin-bottom: 30px;
+  }
+
+  .radio__list {
+    gap: 25px;
+    padding-bottom: 30px;
+  }
+
+  .radio__item {
+    max-width: 113px;
+    max-height: 150px;
+    height: 150px;
+  }
+
+  .radio__img {
+    width: 113px;
+    height: 50px;
+  }
+
+  .radio__description {
+    padding: 10px;
+  }
+
+  .radio__name {
+    font-size: 12px;
+  }
+
+  .radio__time {
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+
+  .radio__link {
+    position: absolute;
+    bottom: 12px;
+    font-size: 11px;
+    color: $btn-second;
+
+    &::before {
+      width: 0;
+      height: 0;
+    }
+
+    img {
+      width: 18px;
+    }
+  }
+
+  .radio__info_bottom img {
+    width: 77px;
+    height: 105px;
+  }
+
+  .radio__container {
+    min-width: 166px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 7px;
+  }
+
+  .radio__pstext {
+    font-size: 12px;
+  }
+
+  .radio__btn {
+    width: 110px;
+    height: 35px;
+    padding: 0;
+  }
+}
