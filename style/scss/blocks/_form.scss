@@ -134,3 +134,16 @@
   }
 
 }
+
+@media screen and (max-width:768px) {
+  .credentials {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .form__name,
+  .form__email {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}

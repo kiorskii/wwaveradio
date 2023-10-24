@@ -51,3 +51,38 @@
     min-width: 854px;
   }
 }
+
+@media screen and (max-width:768px) {
+  .footer {
+    min-width: 570px;
+  }
+
+  .footer__main {
+    display: block;
+    padding-bottom: 80px;
+  }
+
+  .footer__container {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .footer__socialsList {
+    width: fit-content;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .footer__link svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__nav {
+    margin: 0 auto;
+    max-width: 540px;
+    justify-content: space-between;
+  }
+}

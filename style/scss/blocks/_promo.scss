@@ -87,3 +87,30 @@
     max-width: 396px;
   }
 }
+
+@media screen and (max-width:768px) {
+  .promo {
+    min-width: 570px;
+
+    .container {
+      display: block;
+    }
+  }
+
+  .promo__img {
+    max-width: 540px;
+    max-height: 474px;
+    margin-bottom: 50px;
+  }
+
+  .promo__imgContainer::before {
+    width: 160px;
+    height: 160px;
+    background-size: 160px 160px;
+  }
+
+  .promo__decoration {
+    max-width: 540px;
+    width: 100%;
+  }
+}

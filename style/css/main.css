@@ -59,7 +59,11 @@ ul {
 @media screen and (max-width: 1024px) {
   .container {
     width: 824px;
-    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 539px;
   }
 }
 /* Style For Text Links */
@@ -168,6 +172,11 @@ ul {
             justify-content: space-between;
   }
 }
+@media screen and (max-width: 768px) {
+  .header .container {
+    min-height: 140px;
+  }
+}
 .hero .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,6 +231,14 @@ ul {
     max-width: 256px;
     max-height: 262px;
     padding-top: 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__content {
+    padding-top: 90px;
+  }
+  .hero__img {
+    display: none;
   }
 }
 .podcasts {
@@ -289,6 +306,20 @@ ul {
     min-width: 854px;
   }
 }
+@media screen and (max-width: 768px) {
+  .podcasts {
+    min-width: 570px;
+  }
+  .podcasts__title {
+    margin: 0;
+  }
+  .podcasts__list {
+    display: block;
+  }
+  .podcasts__item {
+    margin-top: 30px;
+  }
+}
 .radio {
   padding: 94px 0;
   min-height: 564px;
@@ -306,6 +337,11 @@ ul {
   bottom: 0;
   max-width: 255px;
   padding-bottom: 94px;
+}
+
+.radio__pstext {
+  color: #A1A6B4;
+  line-height: 150%;
 }
 
 /* Right section */
@@ -360,9 +396,53 @@ ul {
   height: 148px;
 }
 
+@media screen and (max-width: 768px) {
+  .radio {
+    padding-bottom: 0;
+  }
+  .radio .container {
+    display: block;
+    min-height: 1228px;
+    min-width: 540px;
+  }
+  .radio__title {
+    margin-bottom: 123px;
+  }
+  .radio__list {
+    padding-top: 0;
+    gap: 27px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #E6E8EC;
+  }
+  .radio__info_bottom {
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .radio__info_bottom img {
+    width: 70px;
+    height: 96px;
+  }
+  .radio__container {
+    min-width: 255px;
+  }
+  .radio__btn {
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+}
 .guests {
   background-color: #121723;
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 44px;
   min-width: 1170px;
 }
 .guests p {
@@ -422,6 +502,25 @@ ul {
   }
   .guests__description {
     max-width: 536px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .guests {
+    min-width: 570px;
+  }
+  .guests__description {
+    font-size: 20px;
+  }
+  .guests__item {
+    display: block;
+    height: 642px;
+  }
+  .guests__cardDescription {
+    max-width: 362px;
+  }
+  .guests__img {
+    width: 540px;
+    height: 340px;
   }
 }
 .playlists {
@@ -571,6 +670,14 @@ ul {
             transform: translateX(100%);
   }
 }
+@media screen and (max-width: 768px) {
+  .playlists {
+    min-width: 570px;
+  }
+  .playlists__description {
+    max-width: 400px;
+  }
+}
 .promo {
   background-color: #292E39;
   padding: 94px 0;
@@ -661,6 +768,28 @@ ul {
     max-width: 396px;
   }
 }
+@media screen and (max-width: 768px) {
+  .promo {
+    min-width: 570px;
+  }
+  .promo .container {
+    display: block;
+  }
+  .promo__img {
+    max-width: 540px;
+    max-height: 474px;
+    margin-bottom: 50px;
+  }
+  .promo__imgContainer::before {
+    width: 160px;
+    height: 160px;
+    background-size: 160px 160px;
+  }
+  .promo__decoration {
+    max-width: 540px;
+    width: 100%;
+  }
+}
 .team {
   background-color: #121723;
   color: #A1A6B4;
@@ -691,11 +820,18 @@ ul {
   line-height: 160%;
 }
 
-.team__list {
+.team__decoration {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 29px;
   margin-bottom: 30px;
 }
 
@@ -723,11 +859,15 @@ ul {
   line-height: 24px;
 }
 
+.team__decoration > svg:nth-child(2) {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .team {
     min-width: 854px;
   }
-  .team__figure:first-of-type {
+  .team__decoration > svg:first-of-type {
     display: none;
   }
   .team__list {
@@ -741,6 +881,46 @@ ul {
   .team__img {
     width: 397px;
     height: 260px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team {
+    position: relative;
+    min-width: 570px;
+  }
+  .team__decoration {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin: 30px 0;
+  }
+  .team__decoration > svg {
+    max-height: 112px;
+    display: block !important;
+  }
+  .team__decoration > svg:nth-child(1) {
+    opacity: 0;
+  }
+  .team__decoration > svg:nth-child(2) {
+    display: block;
+    position: absolute;
+    top: 430px;
+    left: -80px;
+  }
+  .team__decoration > svg:nth-child(3) {
+    max-width: 112px;
+  }
+  .team__infoContainer {
+    max-width: 540px;
+    display: block;
+  }
+  .team__card {
+    max-width: 255px;
+    max-height: 361px;
+  }
+  .team__img {
+    width: 255px;
+    height: 255px;
   }
 }
 .footer {
@@ -806,6 +986,41 @@ ul {
 @media screen and (max-width: 1024px) {
   .footer {
     min-width: 854px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    min-width: 570px;
+  }
+  .footer__main {
+    display: block;
+    padding-bottom: 80px;
+  }
+  .footer__container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .footer__socialsList {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .footer__link svg {
+    width: 36px;
+    height: 36px;
+  }
+  .footer__nav {
+    margin: 0 auto;
+    max-width: 540px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /* Button Purple Fill */
@@ -1039,5 +1254,16 @@ ul {
   .form__name,
   .form__email {
     width: 397px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .credentials {
+    display: block;
+    margin-bottom: 0;
+  }
+  .form__name,
+  .form__email {
+    margin-bottom: 30px;
+    width: 100%;
   }
 }

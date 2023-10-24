@@ -56,3 +56,13 @@
     padding-top: 90px;
   }
 }
+
+@media screen and (max-width:768px) {
+  .hero__content {
+    padding-top: 90px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+}

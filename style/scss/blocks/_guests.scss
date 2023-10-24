@@ -1,6 +1,7 @@
 .guests {
   background-color: $d-blue;
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 44px;
   min-width: 1170px;
 
   p {
@@ -58,5 +59,29 @@
 
   .guests__description {
     max-width: 536px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .guests {
+    min-width: 570px;
+  }
+
+  .guests__description {
+    font-size: 20px;
+  }
+
+  .guests__item {
+    display: block;
+    height: 642px;
+  }
+
+  .guests__cardDescription {
+    max-width: 362px;
+  }
+
+  .guests__img {
+    width: 540px;
+    height: 340px;
   }
 }

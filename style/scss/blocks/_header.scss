@@ -57,3 +57,12 @@
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width:768px) {
+  .header {
+
+    .container {
+      min-height: 140px;
+    }
+  }
+}

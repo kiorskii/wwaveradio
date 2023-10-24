@@ -58,9 +58,13 @@ ul {
 @media screen and (max-width:1024px) {
   .container {
     width: 824px;
-    margin: 0 auto;
   }
+}
 
+@media screen and (max-width:768px) {
+  .container {
+    width: 539px;
+  }
 }
 
 /* Style For Text Links */

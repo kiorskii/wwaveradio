@@ -142,3 +142,13 @@
     transform: translateX(100%);
   }
 }
+
+@media screen and (max-width:768px) {
+  .playlists {
+    min-width: 570px;
+  }
+
+  .playlists__description {
+    max-width: 400px;
+  }
+}
